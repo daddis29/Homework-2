@@ -24,13 +24,23 @@ font-family: "Franklin Gothic Book", Arial, Helvetica, sans-serif;
 }
 
 
+.col-12 {
+    width: 50%;
+}
 
-.container {
-    width: 300px;
-    border: 3px solid #fadadd;
-    padding: 10px;
-    margin: 20px;
-    text-align: center;
-    font-family: "Franklin Gothic Book", Arial, Helvetica, sans-serif;
-    font-size: 16px;
+
+/*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+@media screen and (max-width: 768px) {
+    /* The body's bg color will be #333 */
+    body {
+      background-color: #333;
+    }
+  
+    /* The wrapper's width will be 600px */
+    .wrapper {
+      width: 600px;
+    }
   }
